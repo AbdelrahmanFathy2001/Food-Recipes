@@ -1,0 +1,125 @@
+body{
+    background-color: #0D0D0D;
+}
+*{
+    box-sizing: border-box;
+}
+.w-65{
+    width: 65%;
+}
+.w-10{
+    width: 75px;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.width{
+    width: 65px;
+}
+.leftWidth{
+    width: 258px;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 70px;
+    aspect-ratio: 1;
+    display: grid;
+    border: 4px solid #0000;
+    border-radius: 50%;
+    border-color: #ccc #0000;
+    animation: l16 1s infinite linear;
+  }
+  .loader::before,
+  .loader::after {    
+    content: "";
+    grid-area: 1/1;
+    margin: 2px;
+    border: inherit;
+    border-radius: 50%;
+  }
+  .loader::before {
+    border-color: #f03355 #0000;
+    animation: inherit; 
+    animation-duration: .5s;
+    animation-direction: reverse;
+  }
+  .loader::after {
+    margin: 8px;
+  }
+  @keyframes l16 { 
+    100%{transform: rotate(1turn)}
+  }
+.load{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #252323dc;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3000;
+}
+
+.modal {
+    --bs-modal-header-border-width:0px;
+    --bs-modal-footer-border-width:0px
+}
+/* ------------------------------------ */
+.layer{
+    top: 100%;
+    transition:top .4s;
+    background-color: #f9f6f6ca;
+}
+.image:hover .layer{
+    top: 0;
+}
+/* --------------------------- */
+.content{
+    cursor: pointer;
+}
+/* CONTACT */
+.alert{
+    font-size: 12px;
+}
+/* ----------------- */
+.aside{
+    position: fixed;
+    left: -258px;
+    top: 0;
+    z-index: 2000;
+    transition: all .6s ;
+   
+}
+ li{
+    cursor: pointer;
+ }
+ .recipes{
+    padding: 4px;
+    background-color: #CFF4FC;
+    border-radius: 5px;
+    border: 0;
+    color: #252323;
+    /* margin-bottom: 5px !important; */
+ }
+ .bgtag{
+    background-color:#CFF4FC ;
+    color: black;
+ }
+
+ .aside ul li {
+    position: relative;
+    left: 0;
+    top: 300px;
+ }
+ .aside .ul{
+    overflow: hidden;
+ }
